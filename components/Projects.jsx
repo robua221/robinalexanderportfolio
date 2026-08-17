@@ -15,7 +15,7 @@ const projects = [
       "Gemini API",
       "Razorpay",
     ],
-    github: "#",
+    github: "https://github.com/robua221/career-ai-frontend.git",
     demo: "#",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
       "Resend",
       "Arcjet",
     ],
-    github: "#",
+    github: "https://github.com/robua221/chatfrog.git",
     demo: "#",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       "Google Maps API",
       "YouTube API",
     ],
-    github: "#",
+    github: "https://github.com/robua221/FitFlexApp.git",
     demo: "#",
   },
 ];
@@ -93,6 +93,8 @@ export default function Projects() {
                 <a
                   href={p.demo}
                   className="text-sm block text-primary mb-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live
                 </a>
@@ -100,6 +102,8 @@ export default function Projects() {
                 <a
                   href={p.github}
                   className="text-sm block text-muted"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code
                 </a>
