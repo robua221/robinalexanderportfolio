@@ -1,7 +1,5 @@
 "use client";
-
 import { motion } from "framer-motion";
-
 const projects = [
   {
     title: "AI-Powered Career SaaS Platform",
@@ -16,7 +14,7 @@ const projects = [
       "Razorpay",
     ],
     github: "https://github.com/robua221/career-ai-frontend.git",
-    demo: "#",
+    demo: " https://career-ai-frontend-ivory.vercel.app/",
   },
   {
     title: "Real-Time Chat Application",
@@ -40,16 +38,13 @@ const projects = [
   {
     title: "FitFlex App",
     desc: "AI-powered fitness mobile app with a virtual trainer, nearby gym discovery, Apple Watch integration, and fitness-related content.",
-    tech: [
-      "React Native",
-      "Firebase",
-      "Google Maps API",
-      "YouTube API",
-    ],
+    tech: ["React Native", "Firebase", "Google Maps API", "YouTube API"],
     github: "https://github.com/robua221/FitFlexApp.git",
-    demo: "#",
+    demo: "#", // TODO: replace with your live URL once deployed
   },
 ];
+
+const hasLiveDemo = (demo) => Boolean(demo) && demo !== "#";
 
 export default function Projects() {
   return (
@@ -61,7 +56,6 @@ export default function Projects() {
       >
         Projects
       </motion.h2>
-
       <div className="mt-6 grid gap-6 md:grid-cols-2">
         {projects.map((p) => (
           <motion.div
@@ -72,11 +66,7 @@ export default function Projects() {
             <div className="flex items-start justify-between">
               <div>
                 <h3 className="text-lg font-semibold">{p.title}</h3>
-
-                <p className="text-sm text-muted mt-2">
-                  {p.desc}
-                </p>
-
+                <p className="text-sm text-muted mt-2">{p.desc}</p>
                 <div className="mt-3 flex gap-2 flex-wrap">
                   {p.tech.map((t) => (
                     <span
@@ -88,17 +78,17 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-
               <div className="text-right">
-                <a
-                  href={p.demo}
-                  className="text-sm block text-primary mb-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live
-                </a>
-
+                {hasLiveDemo(p.demo) && (
+                  <a
+                    href={p.demo}
+                    className="text-sm block text-primary mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live
+                  </a>
+                )}
                 <a
                   href={p.github}
                   className="text-sm block text-muted"

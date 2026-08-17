@@ -25,12 +25,12 @@ export default function About() {
       >
         <p className="text-muted leading-relaxed">
           <span className="block mb-2">
-            I am a <strong>Full-Stack JavaScript Developer</strong> with
-            experience building web and mobile applications using modern tools
-            and frameworks. I work primarily with the MERN stack and
-            React-Native, and I enjoy designing clean frontend interfaces,
-            writing efficient backend APIs, and integrating cloud technologies
-            to deliver complete solutions.
+            I am a <strong>Software Engineer</strong> with 2+ years of
+            experience building backend and enterprise applications using
+            JavaScript, TypeScript, Python, SQL, Node.js, PostgreSQL, and AWS. I
+            work primarily with the MERN stack and React-Native, and I enjoy
+            designing clean frontend interfaces, writing efficient backend APIs,
+            and integrating cloud technologies to deliver complete solutions.
           </span>
 
           <span className="block mb-2">
@@ -45,11 +45,12 @@ export default function About() {
           </span>
 
           <span className="block mb-2">
-            During my internships, I worked on real product features, API
-            development, performance improvements, deployment pipelines, and
-            cross-team collaboration in agile environments. These experiences
-            strengthened my problem-solving ability, attention to detail, and
-            understanding of full-cycle software development.
+            In my roles at MOGI I/O and DYNAPT, I worked on production
+            applications, REST API development, database optimization, CI/CD
+            pipelines, and application troubleshooting, collaborating with
+            product, design, and QA teams in agile environments. These
+            experiences strengthened my problem-solving ability, attention to
+            detail, and understanding of full-cycle software development.
           </span>
 
           <span className="block">
@@ -67,9 +68,9 @@ export default function About() {
               <li>MERN Stack (React, Next.js, Node.js, Express, MongoDB)</li>
               <li>Cross-platform mobile apps with React-Native</li>
               <li>Swift, Firebase & iOS fundamentals</li>
-              <li>REST APIs, database design & backend development</li>
-              <li>AWS / Firebase / CI-CD basics</li>
-              <li>Version control, debugging & optimization</li>
+              <li>REST APIs, PostgreSQL & backend development</li>
+              <li>AWS, Docker, GitHub Actions & CI/CD</li>
+              <li>Jest testing, debugging & production support</li>
             </ul>
           </div>
 
@@ -84,7 +85,7 @@ export default function About() {
               (Canada)
             </p>
             <p className="text-sm text-muted">
-              <strong>Masters in Computer Application</strong> — Jamia Hamdard
+              <strong>Master of Computer Applications</strong> — Jamia Hamdard
               University (India)
             </p>
           </div>
