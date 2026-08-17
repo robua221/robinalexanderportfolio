@@ -16,7 +16,6 @@ export default function Hero() {
 
       {/* Grid Layout */}
       <div className="grid md:grid-cols-2 gap-12 items-center relative">
-
         {/* Left Section: Text */}
         <div>
           <motion.h1
@@ -25,13 +24,13 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-4xl font-bold"
           >
-         Hi, I'm <span className="text-primary">Robin Alexander</span>
+            Hi, I'm <span className="text-primary">Robin Alexander</span>
           </motion.h1>
 
-      <p className="mt-3 text-muted">
-  Full-Stack JavaScript & React-Native Developer  
-  — building scalable Web, Mobile & Web3 applications with modern JS technologies.
-</p>
+          <p className="mt-3 text-muted">
+            Full-Stack JavaScript & React-Native Developer — building scalable
+            Web, Mobile & Web3 applications with modern JS technologies.
+          </p>
 
           {/* Buttons */}
           <motion.div
@@ -64,7 +63,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Robin_Alexander_CV.pdf"
+              href="/Robin_Alexander_Resume.pdf"
               download
               className="border border-primary text-primary px-4 py-2 rounded hover:bg-primary hover:text-black"
             >
@@ -79,7 +78,7 @@ export default function Hero() {
           animate={{
             scale: 1,
             opacity: 1,
-            y: [0, -8, 0] // floating effect
+            y: [0, -8, 0], // floating effect
           }}
           transition={{
             duration: 1,
@@ -87,8 +86,8 @@ export default function Hero() {
             y: {
               duration: 4,
               ease: "easeInOut",
-              repeat: Infinity
-            }
+              repeat: Infinity,
+            },
           }}
           className="flex justify-center md:justify-end"
         >
